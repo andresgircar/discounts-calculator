@@ -1,0 +1,40 @@
+:root {
+    /*Colors*/
+    --body-background-color: rgb(238,174,202);
+    --body-background-gradient: linear-gradient(34deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    --main-container: rgba(255, 255, 255, 0.7);
+    --secondary-container: rgba(255, 255, 255, 0.15);
+    --title: #eeaeca;
+    --text: 
+}
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    background: var(--body-background-color);
+    background: var(--body-background-gradient);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+main .main-container {
+    padding: 20px;
+    background-color: var(--main-container);
+    border-radius: 18px;
+}
+.main-container .form-container {
+    background-color: var(--secondary-container);
+}
