@@ -6,12 +6,16 @@
     --secondary-container: rgba(255, 255, 255, 0.15);
     --secondary-cont-border: 1px solid rgba(68, 63, 63, 0.05);
     --title: #94BBE9;
+    --buttons-text: #EEAECA;
     --text: #443F3F;
-    --buttons-border: 1px solid linear-gradient(34deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    --placeholder-text: rgba(68, 63, 63, 0.7);
+    --white: white;
+    --buttons-border: 2px solid linear-gradient(34deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     /*Font sizes*/
     --title-sz: 2.6rem;
     --text-sz: 1.8rem;
     --footer-sz: 1.6rem;
+    --buttons-sz: 1.6rem;
 }
 html {
     margin: 0;
@@ -38,7 +42,7 @@ main {
     margin: 0 auto;
 }
 main .main-container {
-    padding: 20px 30px;
+    padding: 20px 60px 40px;
     background-color: var(--main-container);
     border-radius: 2rem;
 }
@@ -46,8 +50,72 @@ main .main-container {
     color: var(--title);
     font-size: var(--title-sz);
 }
+.main-container .info {
+    margin: 30px 0;
+}
 .main-container .form-container {
     background-color: var(--secondary-container);
     border-radius: 1.8rem;
     border: var(--secondary-cont-border);
+    padding: 30px;
+}
+.form-container .inputs-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+label {
+    text-align: left;
+}
+input {
+    height: 3.4rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0 2rem;
+    font-family: 'Comfortaa', cursive;
+}
+input::placeholder {
+    color: var(--placeholder-text);
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.4rem;
+}
+select {
+    height: 3.4rem;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--white);
+    padding: 0 1rem;
+    font-family: 'Comfortaa', cursive;
+}
+button {
+    background-color: transparent;
+    border: 2px solid var(--body-background-color);
+    border-radius: 1rem;
+    font-family: 'Comfortaa', cursive;
+    font-size: var(--buttons-sz);
+    padding: 15px 0;
+    width: 40%;
+    margin: 0 10px;
+    color: var(--buttons-text);
+    cursor: pointer;
+}
+button:hover {
+    background: var(--buttons-text);
+    border: none;
+    color: var(--white);
+}
+.buttons {
+    width: 100%;
+    margin-top: 2.5rem;
+}
+.buttons button:last-child {
+    border: 2px solid var(--title);
+    color: var(--title);
+}
+.buttons button:last-child:hover {
+    background-color: var(--title);
+    color: var(--white);
+}
+main .footer-info a {
+    text-decoration: none;
 }

@@ -14,16 +14,15 @@
     <main>
         <section class="main-container">
             <h1>Calculadora de descuentos</h1>
-            <p>Calcula el valor final que debes pagar por una compra o producto después de aplicar un descuento</p>
+            <p class="info">Calcula el valor final que debes pagar por una compra o producto después de aplicar un descuento</p>
             <div class="form-container">
                 <form action="">
                     <div class="inputs-container">
                         <label for="">Ingresa el valor de tu producto o compra</label>
                         <input type="number" id="" placeholder="$1.000.000">
                         <label for="">Ingresa el porcentaje de descuento que deseas calcular</label>
-                        <input type="number" name="" id="">
+                        <input type="number" name="" id="" placeholder="25%">
                         <label for="">Prueba con un cupón</label>
-                        <input list="coupons">
                         <select name="coupons" id="coupons">
                             <option value="10%OFF">10%OFF</option>
                             <option value="15%OFF">15%OFF</option>
@@ -36,11 +35,11 @@
                         <button type="button">Calcular</button>
                         <button type="button">Calcular con cupón</button>
                     </div>
-                    <p></p>
+                    <p id="output-text"></p>
                 </form>
             </div>
         </section>
-        <p>Designed and developed by Andrés Giraldo <a href="">@Andresgircar</a></p>
+        <p class="footer-info">Designed and developed by Andrés Giraldo <a href="">@Andresgircar</a></p>
     </main>
     <script src="./JS/script.js"></script>
 </body>
