@@ -4,8 +4,14 @@
     --body-background-gradient: linear-gradient(34deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     --main-container: rgba(255, 255, 255, 0.7);
     --secondary-container: rgba(255, 255, 255, 0.15);
-    --title: #eeaeca;
-    --text: 
+    --secondary-cont-border: 1px solid rgba(68, 63, 63, 0.05);
+    --title: #94BBE9;
+    --text: #443F3F;
+    --buttons-border: 1px solid linear-gradient(34deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    /*Font sizes*/
+    --title-sz: 2.6rem;
+    --text-sz: 1.8rem;
+    --footer-sz: 1.6rem;
 }
 html {
     margin: 0;
@@ -18,6 +24,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Comfortaa', cursive;
+    font-size: var(--text-sz);
     background: var(--body-background-color);
     background: var(--body-background-gradient);
     background-repeat: no-repeat;
@@ -31,10 +38,16 @@ main {
     margin: 0 auto;
 }
 main .main-container {
-    padding: 20px;
+    padding: 20px 30px;
     background-color: var(--main-container);
-    border-radius: 18px;
+    border-radius: 2rem;
+}
+.main-container h1 {
+    color: var(--title);
+    font-size: var(--title-sz);
 }
 .main-container .form-container {
     background-color: var(--secondary-container);
+    border-radius: 1.8rem;
+    border: var(--secondary-cont-border);
 }
