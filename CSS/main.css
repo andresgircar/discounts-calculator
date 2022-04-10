@@ -21,6 +21,7 @@
     --mobile-title-sz: 2.2rem;
     --mobile-text-sz: 1.6rem;
 }
+/*html & body styles*/
 html {
     margin: 0;
     padding: 0;
@@ -41,6 +42,7 @@ body {
     place-content: center;
     text-align: center;
 }
+/*main styles*/
 main {
     width: 80%;
     margin: 0 auto;
@@ -129,6 +131,7 @@ main .footer-info {
 main .footer-info a {
     text-decoration: none;
 }
+/*media queries*/
 @media (max-width: 1000px) {
     body {
         height: 100%;
@@ -141,6 +144,7 @@ main .footer-info a {
         margin: 0 5px;
     }
 }
+/*tablet*/
 @media (max-width: 700px) {
     main .main-container {
         padding: 20px 30px 40px;
@@ -156,6 +160,7 @@ main .footer-info a {
         text-align: center;
     }
 }
+/*mobile*/
 @media (max-width: 430px) {
     body {
         font-size: var(--mobile-text-sz);
