@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/main.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
                         <input type="number" name="" id="discount-input" placeholder="25%">
                         <label for="coupons">Prueba con un cupón estándar</label>
                         <select name="coupons" id="coupons">
-                            <option value="info">Selecciona una opción</option>
+                            <option value="list-info">Selecciona una opción</option>
                             <option value="10%OFF">10%OFF</option>
                             <option value="15%OFF">15%OFF</option>
                             <option value="30%OFF">30%OFF</option>
@@ -35,7 +36,7 @@
                     </div>
                     <div class="buttons">
                         <button type="button" onclick="calcularPrecioFinal()">Calcular</button>
-                        <button type="button">Calcular con cupón</button>
+                        <button type="button" onclick="calcularPrecioFinalConCupon()">Calcular con cupón</button>
                     </div>
                     <p id="output-text"></p>
                 </form>
