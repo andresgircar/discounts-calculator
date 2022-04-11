@@ -12,3 +12,6 @@ function calcularPrecioFinal() {
     const resultP = document.getElementById("output-text");
     resultP.innerText = "El precio que debes pagar después de aplicar el descuento es: $" + precioFinal;
 }
+const couponsList = [
+    
+]
