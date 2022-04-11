@@ -125,6 +125,11 @@ button:hover {
     color: var(--white);
     border: 2px solid var(--title);
 }
+main #output-text {
+    font-size: var(--text-sz);
+    color: var(--text);
+    margin: 2.5rem 0 0;
+}
 main .footer-info {
     font-size: var(--footer-sz);
 }
@@ -182,5 +187,9 @@ main .footer-info a {
     }
     main .footer-info {
         font-size: var(--mobile-footer-sz);
+    }
+    main #output-text {
+        font-size: var(--mobile-text-sz);
+        margin: 2rem 0 1rem;
     }
 }
